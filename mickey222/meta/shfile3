@@ -1,0 +1,21 @@
+while :
+do
+   echo -n '
+	MENU
+     1 pwd
+     2 ls -l
+     3 date
+     4 Quit
+
+        menu ? ==> '
+
+   read NUM; echo
+
+   case $NUM in
+     1) pwd  ;;
+     2) ls -l;;
+     3) date ;;
+     4) exit ;;
+     *) echo 'Missing!';;
+   esac
+done

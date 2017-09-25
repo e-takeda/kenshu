@@ -1,0 +1,4 @@
+echo '**Calendar**'
+cal  1  2020
+echo '**  Date  **'
+date
