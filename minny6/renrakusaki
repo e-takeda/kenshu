@@ -1,0 +1,2 @@
+/mail/{print $1,$4}
+/tel/{print $1,$3}

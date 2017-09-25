@@ -1,0 +1,6 @@
+#!/bin/sh
+
+f=member
+echo "*** $f ***"
+cat $f
+

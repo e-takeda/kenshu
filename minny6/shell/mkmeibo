@@ -1,0 +1,14 @@
+#!/bin/sh
+
+while :
+do
+	echo -n 'name? '
+	read name
+	case $name in
+		end) break
+                     ;;
+	esac
+	echo -n 'tel number? '
+	read tel
+	echo "$name  $tel" >> meibo
+done

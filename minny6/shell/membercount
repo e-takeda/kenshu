@@ -1,0 +1,9 @@
+#!/bin/sh
+
+f=member
+echo "*** $f ***"
+cat $f
+
+num=`grep -c m $f`
+echo "*** Male  : ${num}persons ***"
+

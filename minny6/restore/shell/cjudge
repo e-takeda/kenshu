@@ -1,0 +1,17 @@
+#!/bin/csh
+
+echo $argv[1]
+switch ("$argv[1]")
+case	[0-9]:
+	echo '数字です。'
+	breaksw
+case	[a-z]:
+	echo '小文字です。'
+	breaksw
+case	[A-Z]:
+	echo '大文字です。'
+	breaksw
+default:
+	echo '分かりません...'
+	breaksw
+endsw

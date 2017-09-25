@@ -1,0 +1,3 @@
+echo '***** find1 Start *****'
+grep -n int prog1.c            # search
+echo '***** find1 End   *****'

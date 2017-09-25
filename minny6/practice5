@@ -1,0 +1,18 @@
+#! /bin/sh
+no=`whoami | sed 's/^minny//'`
+if [ ! -d /tmp/nec ]
+ then mkdir /tmp/nec/
+      chmod g+w /tmp/nec/
+fi
+cd /tmp/nec/
+touch grape$no
+if [ -d sweets ]
+    then touch sweets/cookie${no}
+         touch sweets/choco${no}
+         mkdir sweets/candy${no}/
+    else mkdir sweets/
+	     chmod g+w sweets/
+         touch sweets/cookie${no}
+         touch sweets/choco${no}
+         mkdir sweets/candy${no}/
+fi

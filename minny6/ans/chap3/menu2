@@ -1,0 +1,31 @@
+#!/bin/sh
+
+while :
+do
+	echo '(1) date'
+	echo '(2) who'
+	echo '(3) pwd'
+	echo '(4) ls -l'
+	echo '(5) exit'
+	echo
+	echo -n '  input no:'
+	read no
+	echo
+	case $no in
+		1) date
+			;;
+		2) who
+			;;
+		3) pwd
+			;;
+		4) ls -l
+			;;
+		5) exit 0
+			;;
+		*) echo 'Illegal number'
+	  	   echo 'Please input 1-5'
+			;;
+	esac
+	echo
+done
+	

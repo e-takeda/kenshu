@@ -1,0 +1,20 @@
+#!/bin/sh
+
+for f
+do
+	if [ -f $f ]
+	then echo $f >> O_file
+	else if [ -d $f ]  
+			then echo $f >> D_file
+		 fi
+	fi
+done
+
+
+for f in O_file D_file
+do
+	if [ -s $f ]
+	then echo "--- $f ---"
+		cat $f
+	fi
+done

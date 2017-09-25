@@ -1,0 +1,12 @@
+#!/bin/sh
+
+for f
+do
+	if [ -f $f ]
+	then echo $f >> O_file
+	else  if [ -d $f ]
+			then echo $f >> D_file
+		  fi
+	fi
+done
+

@@ -1,0 +1,3 @@
+BEGIN{print "---member list---"}
+{print $1,$3}
+END{print "member : "NR}

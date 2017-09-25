@@ -1,0 +1,6 @@
+BEGIN{print "今月の売上数"}
+NR>1{
+     printf("%-10s",$1);
+     for(i=0;i<$3;i++){ printf("*") };
+     printf("\n")
+    }

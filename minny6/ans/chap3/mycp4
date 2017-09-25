@@ -1,0 +1,8 @@
+#!/bin/sh
+
+d=`date +%y%m%d`
+
+for f
+do
+	cp $f ${f}.$d
+done

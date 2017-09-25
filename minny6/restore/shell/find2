@@ -1,0 +1,3 @@
+echo '***** find2 Start *****'
+grep -n $1 $2
+echo '***** find2 End   *****'

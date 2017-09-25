@@ -1,0 +1,34 @@
+#!/bin/sh
+datafile=$1
+while :
+do
+	echo -n 'Who?'
+	read name
+
+	case $name in
+		q) exit 0
+			;;
+	esac
+
+	set `grep $name $datafile` 1> /dev/null 2>&1
+
+	while :
+	do
+		case $# in
+			[0-2]) break
+					;;
+		esac
+
+		case $1 in
+			$name) echo "--- ${name}'s data ---"
+				   echo "name     : $1"
+				   echo "sex      : $2"
+				   echo "addr     : $3"
+				   echo "----------------------"
+				   			;;
+		esac
+
+		shift 3
+	done
+done
+

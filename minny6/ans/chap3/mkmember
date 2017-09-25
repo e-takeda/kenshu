@@ -1,0 +1,17 @@
+#!/bin/sh
+while :
+do
+	echo -n 'name?'
+	read name
+	case $name in
+		end) exit 0
+			;;
+	esac
+
+	echo -n 'm or w?'
+	read sex
+	echo -n 'from?'
+	read from
+
+	echo "$name $sex $from" >> $1
+done

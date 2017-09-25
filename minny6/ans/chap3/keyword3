@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo '[in_file:0 out_file:1 no_file:2]'
+echo
+for i
+do
+	grep int $i 1> /dev/null 2>&1
+	echo "$i --->$?"
+done
+	 

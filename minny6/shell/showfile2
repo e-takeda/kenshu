@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for i 
+do
+	echo "--- $i ---"  # filename
+	cat $i             # print
+done

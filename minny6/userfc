@@ -1,0 +1,10 @@
+function myprint(name)
+{
+    print "私の名前は"
+    print name
+    print "です。"
+    return "GOOD!!"
+}
+
+{modori=myprint($1); print "戻り値は",modori}
+

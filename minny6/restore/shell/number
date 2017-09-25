@@ -1,0 +1,11 @@
+#!/bin/sh
+
+data=1
+max=5
+
+while [ $data -le $max ]
+do
+     cp member member$data
+     data=`expr $data + 1`
+done
+echo 'ファイルのコピーが完了しました。'

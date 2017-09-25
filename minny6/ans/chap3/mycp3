@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ext=$1
+shift
+
+for f
+do
+	cp $f ${f}.$ext
+done

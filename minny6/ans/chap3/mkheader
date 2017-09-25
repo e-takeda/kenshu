@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo '/**********************' > $1
+echo " *   FILE   : $1       " >> $1
+echo " *   DATE   : `date`   " >> $1
+echo " *   WRITER : `whoami` " >> $1
+echo ' *********************/' >> $1
+

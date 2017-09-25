@@ -1,0 +1,10 @@
+#!/bin/sh
+
+key=$1
+shift
+for i
+do
+	echo "--- $i ---"
+	grep $key $i
+done
+	 

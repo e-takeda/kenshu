@@ -1,0 +1,12 @@
+#!/bin/sh
+
+key=$1
+shift
+for i
+do
+	if grep $key $i > /dev/null
+		then echo "--- $i ---"
+			grep $key $i
+	fi
+done
+	 

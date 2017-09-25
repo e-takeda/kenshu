@@ -1,0 +1,14 @@
+#!/bin/sh
+
+for file 
+do
+	for d in `cat $file`
+	do
+		if [ $d -ge 0 -a $d -lt 50 ]
+		   then   echo $d >> low-score
+		   elif [ $d -ge 50 -a $d -le 100 ]
+		        then   echo $d >> high-score
+		        else   echo "notice: illegal data exits.   data = $d"
+		fi
+	done
+done

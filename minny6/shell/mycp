@@ -1,0 +1,6 @@
+#!/bin/sh
+
+for i in file1 file2
+do
+	cp $i ${i}.bak
+done

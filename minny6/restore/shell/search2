@@ -1,0 +1,22 @@
+#!/bin/sh
+
+echo -n 'word? '
+read word
+echo -n 'file name? '
+read file
+
+
+if [ -f $file ]
+
+
+	then if grep $word $file > /dev/null
+		then echo "$word is in $file"
+		else echo 'not existed'
+		fi
+
+	else echo "$fileファイルがありません"
+
+
+
+
+fi

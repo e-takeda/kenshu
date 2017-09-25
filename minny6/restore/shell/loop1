@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for i in a bb NEC
+do
+	echo $i
+	echo ---
+done
